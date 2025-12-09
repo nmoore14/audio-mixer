@@ -1,0 +1,28 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+/* Platform detection */
+#cmakedefine PLATFORM_MACOS
+#cmakedefine PLATFORM_WINDOWS
+
+/* Version information */
+#define AUDIO_MIXER_VERSION_MAJOR @AudioMixer_VERSION_MAJOR@
+#define AUDIO_MIXER_VERSION_MINOR @AudioMixer_VERSION_MINOR@
+#define AUDIO_MIXER_VERSION_PATCH @AudioMixer_VERSION_PATCH@
+
+/* Build configuration */
+#cmakedefine CMAKE_BUILD_TYPE "@CMAKE_BUILD_TYPE@"
+
+/* Platform-specific configuration */
+#ifdef PLATFORM_MACOS
+    #define PLATFORM_NAME "macOS"
+    #define AUDIO_BACKEND "CoreAudio"
+#elif defined(PLATFORM_WINDOWS)
+    #define PLATFORM_NAME "Windows"
+    #define AUDIO_BACKEND "WASAPI"
+#else
+    #define PLATFORM_NAME "Unknown"
+    #define AUDIO_BACKEND "None"
+#endif
+
+#endif // CONFIG_H

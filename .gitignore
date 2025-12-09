@@ -1,0 +1,123 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# Object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+*.la
+
+# Executables
+*.exe
+*.out
+*.app
+audio-mixer-daemon
+audio-mixer-tui
+audio-mixer-gui
+audio-mixer
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CTestTestfile.cmake
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CPackConfig.cmake
+CPackSourceConfig.cmake
+
+# Generated config
+include/config.h
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Debug files
+*.dSYM/
+*.pdb
+*.ilk
+
+# Profiling
+*.prof
+gmon.out
+callgrind.out.*
+*.gcov
+*.gcda
+*.gcno
+
+# Documentation
+doxygen/
+html/
+latex/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Package managers
+vcpkg_installed/
+packages/
+node_modules/
+
+# Runtime
+*.pid
+*.sock
+/tmp/
+/var/
+
+# Testing
+test/output/
+test/results/
+*.test
